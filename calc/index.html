@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=, initial-scale=1.0">
+<link rel ="icon" href="favicon-32x32.png">	
+<link rel="stylesheet" href="assets\bootstrap\css\bootstrap.min.css">
+<link rel="stylesheet" id="style" href="assets\css\main.css" >
+<title> calc </title>
+</head>
+<body>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked onclick="theme()" themec=0>
+        
+    </div>
+
+
+    <div class="grid">
+
+    <div class="c">
+        <input type=text id="str0" value="" i="" disabled>
+        <input type="hidden" value='' id='val1' > 
+        <input type="hidden" value='' id='val2' >
+        <input type="hidden" value='' id='op' >
+        <input type="hidden" value='' id='eq' >
+    </div>
+
+    <div class="b">
+        <button class="btn btn-secondary" onclick='clickBtn("7")'>7</button>
+        <button class="btn btn-secondary" onclick='clickBtn("8")'>8</button>
+        <button class="btn btn-secondary" onclick='clickBtn("9")'>9</button>
+        <button class="btn btn-primary"  value="0" onclick='clickBtn("/")'>/</button>
+
+        <button class="btn btn-secondary" onclick='clickBtn("4")'>4</button>
+        <button class="btn btn-secondary" onclick='clickBtn("5")'>5</button>
+        <button class="btn btn-secondary" onclick='clickBtn("6")'>6</button> 
+        <button class="btn btn-primary" value="0" onclick='clickBtn("*")'>×</button>
+
+        <button  class="btn btn-secondary "onclick='clickBtn("1")'>1</button>
+        <button  class="btn btn-secondary "onclick='clickBtn("2")'>2</button>
+        <button  class="btn btn-secondary"onclick='clickBtn("3")'>3</button> 
+        <button class="btn btn-primary" value="0" onclick='clickBtn("-")'>-</button>
+
+        <button class="btn btn-secondary" onclick='clickBtn(".")'>.</button>
+        <button class="btn btn-secondary " onclick='clickBtn("0")'>0</button>
+        <button  class="btn btn-secondary"onclick='remove()'>c</button>  
+        <button class="btn btn-primary" value="0" onclick='clickBtn("+")'>+</button>
+
+
+</div>
+
+    <div class="n">
+        <button class="btn btn-primary e "onclick='clickBtn("=")'>=</button>
+        <button class="btn btn-danger r " onclick='clickBtn("remove")'>remove</button>
+    </div>
+
+</div>
+<script src="assets\bootstrap\js\bootstrap.min.js"></script>
+<script src=assets\js\main.js></script>
+</body>
+</html>
